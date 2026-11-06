@@ -20,7 +20,7 @@ namespace CraigWoodlandOW\LaravelBarcodeGenerator\Utilities;
 
 class Validators
 {
-    function validate_upce($upc, $return_check=false)
+    public static function validate_upce($upc, $return_check=false)
     {
         if (!isset($upc)||!is_numeric($upc)) {
             return false;

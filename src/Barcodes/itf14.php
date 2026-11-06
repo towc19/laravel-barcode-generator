@@ -276,7 +276,6 @@ class itf14
     			imagecopyresampled($new_upc_img, $upc_img, 0, 0, 0, 0, (44 + $upc_size_add) * $resize, 62 * $resize, (44 + $upc_size_add), 62);
     		}
 
-    		imagedestroy($upc_img);
     		$upc_img = $new_upc_img;
     	}
 
@@ -320,7 +319,6 @@ class itf14
     		}
     	}
 
-    	imagedestroy($upc_img);
 
     	return true;
     }

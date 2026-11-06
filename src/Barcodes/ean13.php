@@ -468,7 +468,6 @@ class ean13
             	imagecopyresampled($new_upc_img, $upc_img, 0, 0, 0, 0, (115 + $addonsize) * $resize, 62 * $resize, 115 + $addonsize, 62);
             }
 
-        	imagedestroy($upc_img);
         	$upc_img = $new_upc_img;
         }
 
@@ -512,7 +511,6 @@ class ean13
             }
         }
 
-    	imagedestroy($upc_img);
     	return true;
     }
 }
